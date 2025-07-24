@@ -1,0 +1,11 @@
+gene_biomarker,pathway_1,pathway_2,pathway_3,pathway_4,pathway_5
+gene_biomarker_1,0,1,0,0,0
+gene_biomarker_2,0,0,0,1,1
+gene_biomarker_3,0,1,1,1,0
+gene_biomarker_4,1,1,1,1,0
+gene_biomarker_5,0,1,1,1,1
+gene_biomarker_6,1,1,0,1,0
+gene_biomarker_7,0,0,1,0,0
+gene_biomarker_8,1,1,0,1,1
+gene_biomarker_9,0,1,0,0,1
+gene_biomarker_10,0,0,1,1,0
