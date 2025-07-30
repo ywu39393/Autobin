@@ -25,8 +25,8 @@ To run Autobin, you have two options:
     python train.py
     ```
 
-2. **On your own machine**:  
-    First, create the Conda environment using the provided `environment.yml` file, then activate it and run the training script:
+2. **On other machine**:  
+    Since the Conda environment is not pre-installed, you need to create the Conda environment using the provided `environment.yml` file, then activate it and run the training script:
     ```bash
     conda env create -f environment.yml
     conda activate autobin
@@ -37,7 +37,7 @@ To run Autobin, you have two options:
 
 ### Command Line Arguments
 
-To increase model flexibility and usability, Autobin's `train.py` script accepts several command line arguments. These allow you to specify paths for input data files and model output locations. The default paths are set to common directories, but you can customize them as needed.
+To increase model flexibility and usability, Autobin's `train.py` script accepts several command line arguments. These allow you to specify paths for input data files and model output locations. The default paths are set to common directories, but you can customize them as needed. Before running the script, ensure you have the required data files in the specified locations or adjust the paths accordingly.
 
 - `--clinical_data`: Path to the clinical data CSV file.  
     *Default*: `data/clinical_data.csv`
@@ -63,4 +63,4 @@ To increase model flexibility and usability, Autobin's `train.py` script accepts
 
 ## Contact
 
-For questions or support, contact [Yifan](mailto:ywu3939@gmail.com) or [Weiliang](mailto:Weiliang.Qiu@sanofi.com).
+For any questions or support, please contact [Yifan](mailto:ywu3939@gmail.com) or [Weiliang](mailto:Weiliang.Qiu@sanofi.com).
