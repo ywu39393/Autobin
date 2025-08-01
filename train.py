@@ -75,19 +75,19 @@ def main():
     input_n2 = x_olink.shape[1]
 
     # Hyperparameters to tune
-    # z_dim = [16, 32, 64, 128]  
-    # EPOCH_NUM = [800, 1200, 1600, 2000]
-    # NUM_CYCLES = [1, 2, 3, 4]  
-    # Initial_Learning_Rate = [0.0005, 0.001, 0.005, 0.01, 0.05]  
-    # L2_Lambda = [0.0001, 0.001, 0.005, 0.01] 
-    # CUTTING_RATIO = [0.5, 0.6, 0.7, 0.8] 
+    z_dim = [16, 32, 64, 128]  
+    EPOCH_NUM = [800, 1200, 1600, 2000]
+    NUM_CYCLES = [1, 2, 3, 4]  
+    Initial_Learning_Rate = [0.0005, 0.001, 0.005, 0.01, 0.05]  
+    L2_Lambda = [0.0001, 0.001, 0.005, 0.01] 
+    CUTTING_RATIO = [0.5, 0.6, 0.7, 0.8] 
 
-    z_dim = [64]
-    EPOCH_NUM = [1600]
-    NUM_CYCLES = [2]
-    Initial_Learning_Rate = [0.005]
-    L2_Lambda = [0.005]
-    CUTTING_RATIO = [0.7]
+    # z_dim = [64]
+    # EPOCH_NUM = [1600]
+    # NUM_CYCLES = [2]
+    # Initial_Learning_Rate = [0.005]
+    # L2_Lambda = [0.005]
+    # CUTTING_RATIO = [0.7]
 
     # Initialize k-fold cross validation
     k_folds = 5
@@ -255,22 +255,23 @@ def main():
     
     
     # Example of calling the function with your data 
-    # input_n = opt_dim
-    # level_2_dim = [8, 16, 32]
-    # epoch_num = 1000
-    # patience = 50
-    # Initial_Learning_Rate = [0.2, 0.1, 0.05, 0.01, 0.0075, 0.005, 0.0025]
-    # L2_Lambda = [0.01, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
-    # Dropout_rate_1 = [0.1, 0.3, 0.5, 0.7]
-    # Dropout_rate_2 = [0.1, 0.3, 0.5, 0.7]
     input_n = opt_dim
-    level_2_dim = [16]
+    level_2_dim = [8, 16, 32]
     epoch_num = 1000
     patience = 50
-    Initial_Learning_Rate = [0.2]
-    L2_Lambda = [ 0.00075]
-    Dropout_rate_1 = [0.1]
-    Dropout_rate_2 = [0.1]
+    Initial_Learning_Rate = [0.2, 0.1, 0.05, 0.01, 0.0075, 0.005, 0.0025]
+    L2_Lambda = [0.01, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
+    Dropout_rate_1 = [0.1, 0.3, 0.5, 0.7]
+    Dropout_rate_2 = [0.1, 0.3, 0.5, 0.7]
+    
+    # input_n = opt_dim
+    # level_2_dim = [16]
+    # epoch_num = 1000
+    # patience = 50
+    # Initial_Learning_Rate = [0.2]
+    # L2_Lambda = [ 0.00075]
+    # Dropout_rate_1 = [0.1]
+    # Dropout_rate_2 = [0.1]
 
     best_epoch_num = 0
 
